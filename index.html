@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orishaba Ritah Juliet - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <!-- Added checkbox for CSS-only popup and made image clickable -->
+        <input type="checkbox" id="image-popup" class="popup-checkbox">
+        
+        <!-- Combined profile and photo section into one bordered box -->
+        <section class="profile-photo-section">
+            <div class="container">
+                <div class="profile-box">
+                    <h2 class="profile-title">Orishaba Ritah Juliet - Student Number: 2300716925 - BLIS Student at COCIS</h2>
+                    <div class="profile-content">
+                        <div class="photo-container">
+                            <!-- Made image clickable with label -->
+                            <label for="image-popup" class="image-label">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rita-76bBCGB8kiECXgdT2o4LjT0pGfV6OJ.jpg" alt="Your Photo (Passport Size)" class="passport-photo">
+                            </label>
+                            <p class="photo-label">Your Photo<br>(Passport Size)</p>
+                        </div>
+                        <nav class="main-nav">
+                            <a href="#schools" class="nav-link">Schools</a>
+                            <span class="nav-separator">|</span>
+                            <a href="#hobbies" class="nav-link">Hobbies</a>
+                            <span class="nav-separator">|</span>
+                            <a href="#experience" class="nav-link">Work Experience</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added popup modal for enlarged image -->
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <label for="image-popup" class="popup-close">&times;</label>
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/rita-76bBCGB8kiECXgdT2o4LjT0pGfV6OJ.jpg" alt="Orishaba Ritah Juliet" class="popup-image">
+            </div>
+        </div>
+
+        <!-- Added bordered box around schools section -->
+        <section id="schools" class="schools-section">
+            <div class="container">
+                <div class="section-box">
+                    <h2 class="section-title">Schools Attended</h2>
+                    <!-- Updated schools grid to show only the 4 specified schools -->
+                    <div class="schools-grid">
+                        <div class="school-card">
+                            <div class="school-name">Kampala Model Primary School</div>
+                        </div>
+                        <div class="school-card">
+                            <div class="school-name">Gombe Secondary School</div>
+                            <div class="school-level">O Level</div>
+                        </div>
+                        <div class="school-card">
+                            <div class="school-name">St Julian High School</div>
+                            <div class="school-level">A Level</div>
+                        </div>
+                        <div class="school-card">
+                            <div class="school-name">Makerere University</div>
+                            <div class="school-level">Currently Attending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added bordered box around hobbies section -->
+        <section id="hobbies" class="hobbies-section">
+            <div class="container">
+                <div class="section-box">
+                    <h2 class="section-title">Hobbies</h2>
+                    <ul class="hobbies-list">
+                        <li>Singing</li>
+                        <li>Reading books</li>
+                        <li>Listening to music</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Added bordered box around work experience section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-box">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="experience-content">
+                        <p>Worked as a Librarian at National Library</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Orishaba Ritah Juliet. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
